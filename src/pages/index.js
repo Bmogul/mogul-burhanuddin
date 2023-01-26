@@ -15,16 +15,16 @@ import { useEffect, useState } from 'react'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const [scrollPosition, setScrollPosition] = useState(0)
-  useEffect(() =>{
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-  const handleScroll = () => {
-    setScrollPosition(window.pageYOffset)
-    if(window.innerHeight + window.pageYOffset >= document.body.offsetHeight)
-      scroll.scrollToTop()
-  }
+  // const [scrollPosition, setScrollPosition] = useState(0)
+  // useEffect(() =>{
+  //   window.addEventListener('scroll', handleScroll)
+  //   return () => window.removeEventListener('scroll', handleScroll)
+  // }, [])
+  // const handleScroll = () => {
+  //   setScrollPosition(window.pageYOffset)
+  //   if(window.innerHeight + window.pageYOffset >= document.body.offsetHeight)
+  //     scroll.scrollToTop()
+  // }
   return (
     <>
       <Head>
@@ -34,10 +34,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-      <InfiniteScroll pageStart={0}
-      loadMore={() =>{
-
-      }}>
       <Circle />
       <Circle2/>
       <BMogul />
@@ -151,7 +147,6 @@ export default function Home() {
         <br/>
         <br/>
 
-      </InfiniteScroll>
     </main>
     </>
   )
