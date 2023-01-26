@@ -314,11 +314,13 @@
 
 .myName video{
  width: 300px;
+  border-radius: 100%;
+  margin: 15px;
 }
 
 .myName p {
   margin-bottom: 25px;
-  width:300px; /* removes any default margin from the text */
+  width:275px; /* removes any default margin from the text */
 }
 .myName button {
   margin-bottom: 15px; 
