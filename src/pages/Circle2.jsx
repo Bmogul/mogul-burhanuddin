@@ -5,9 +5,9 @@ import Cross from './Cross';
 const Circle = () => {
 
     return (
-        <div className={styles.circle}>
+        <div className={styles.circle2}>
             {/* cross component */}
-            <Cross rotateDir={1}/>
+            <Cross rotateDir={-1}/>
         </div>
     )
 }

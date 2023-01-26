@@ -6,8 +6,10 @@ import InfiniteScroll from 'react-infinite-scroller'
 import {scroll} from 'react-scroll'
 
 import Circle from './Circle'
+import Circle2 from './Circle2'
 import BMogul from './BMogul'
 import About from './About'
+import SearchBox from './SearchBox'
 import { useEffect, useState } from 'react'
 
 
@@ -37,9 +39,11 @@ export default function Home() {
       loadMore={() =>{
 
       }}>
-        <Circle />
+      <Circle />
+      <Circle2/>
       <BMogul />
       <About/>
+      <SearchBox/>
       <br/>
         <br/>
         <br/>

@@ -13,6 +13,7 @@ const About = () => {
                 amazing software that I interact with on a daily basis. So I decided to simply do a google
                 search "How to code" and the rest was history. 
             </p>
+            <video src='/googleSearch.mp4' loop autoPlay />
             </div>
         </div>
     )

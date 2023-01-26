@@ -253,22 +253,28 @@
 
 .circle {
   position: fixed; /*The position of the element is fixed with respect to the browser window*/
-  top: 50%; /*The top edge of the element is placed at the center of the window*/
+  top: 25%; /*The top edge of the element is placed at the center of the window*/
   left: 5%; /*The left edge of the element is placed at the center of the window*/
   transform: translate(-50%, -50%); /*The element is translated to the top left corner of the window*/
-  width: 500px; /*The width of the element*/
-  height: 500px; /*The height of the element*/
+  width: 450px; /*The width of the element*/
+  height: 450px; /*The height of the element*/
   border-radius: 50%; /*The element will be circular*/
   background-color: transparent;
   border: 20px solid;
 }
-
-.cross {
-
+.circle2 {
+  position: fixed; /*The position of the element is fixed with respect to the browser window*/
+  top: 80%; /*The top edge of the element is placed at the center of the window*/
+  left: 100%; /*The left edge of the element is placed at the center of the window*/
+  transform: translate(-50%, -50%); /*The element is translated to the top left corner of the window*/
+  width: 400px; /*The width of the element*/
+  height: 400px; /*The height of the element*/
+  border-radius: 50%; /*The element will be circular*/
+  background-color: transparent;
+  border: 20px solid;
 }
-
 .crossHorizontal {
-  background-color: red; /*The background color of the cross*/
+  background-color: rgb(170, 11, 11); /*The background color of the cross*/
   transform: rotate(45deg); /*The cross will be rotated 45 degrees*/
 
   width: 50%; /*The width of the cross will be half of the parent element*/
@@ -279,7 +285,7 @@
 }
 
 .crossVertical {
-  background-color: red; /*The background color of the cross*/
+  background-color: rgb(170, 11, 11); /*The background color of the cross*/
   transform: rotate(180deg); /*The cross will be rotated 135 degrees*/
 
   width: 50%; /*The width of the cross will be half of the parent element*/
@@ -304,6 +310,10 @@
   border-radius: 100%;
   width: 150px;
   height: 150px;
+}
+
+.myName video{
+ width: 300px;
 }
 
 .myName p {
