@@ -290,6 +290,36 @@
   
 }
 
+.myName {
+  margin: 50px auto; /* adds a margin of 50px to the top and bottom, and centers the element horizontally */
+}
+
+.myName h1 {
+  text-align: center; /* centers the heading text */
+  margin-bottom: 50px;
+}
+
+.myName img {
+  margin-right: 25px; /* adds a margin of 25px to the right of the image */
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+}
+
+.myName p {
+  margin-bottom: 25px;
+  width:300px; /* removes any default margin from the text */
+}
+.myName button {
+  margin-bottom: 15px; 
+}
+.myName div{
+  justify-content: center;
+}
+
+.section{
+  height: 60vh;
+}
 
 
 /* Tablet and Smaller Desktop */

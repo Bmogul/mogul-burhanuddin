@@ -3,14 +3,27 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from 'src/styles/Home.module.css'
 import InfiniteScroll from 'react-infinite-scroller'
+import {scroll} from 'react-scroll'
 
 import Circle from './Circle'
 import BMogul from './BMogul'
+import About from './About'
+import { useEffect, useState } from 'react'
 
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const [scrollPosition, setScrollPosition] = useState(0)
+  useEffect(() =>{
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+  const handleScroll = () => {
+    setScrollPosition(window.pageYOffset)
+    if(window.innerHeight + window.pageYOffset >= document.body.offsetHeight)
+      scroll.scrollToTop()
+  }
   return (
     <>
       <Head>
@@ -25,8 +38,9 @@ export default function Home() {
 
       }}>
         <Circle />
-        <BMogul />
-        <br/>
+      <BMogul />
+      <About/>
+      <br/>
         <br/>
         <br/>
         <br/>
