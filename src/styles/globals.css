@@ -72,11 +72,14 @@
     --card-border-rgb: 200, 200, 200;
   }
 }
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Ubuntu Mono', monospace;
+
 }
 
 html,

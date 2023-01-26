@@ -1,3 +1,4 @@
+
 .main {
   display: flex;
   flex-direction: column;
@@ -249,6 +250,47 @@
     z-index: 1;
   }
 }
+
+.circle {
+  position: fixed; /*The position of the element is fixed with respect to the browser window*/
+  top: 50%; /*The top edge of the element is placed at the center of the window*/
+  left: 5%; /*The left edge of the element is placed at the center of the window*/
+  transform: translate(-50%, -50%); /*The element is translated to the top left corner of the window*/
+  width: 500px; /*The width of the element*/
+  height: 500px; /*The height of the element*/
+  border-radius: 50%; /*The element will be circular*/
+  background-color: transparent;
+  border: 20px solid;
+}
+
+.cross {
+
+}
+
+.crossHorizontal {
+  background-color: red; /*The background color of the cross*/
+  transform: rotate(45deg); /*The cross will be rotated 45 degrees*/
+
+  width: 50%; /*The width of the cross will be half of the parent element*/
+  height: 50%; /*The height of the cross will be half of the parent element*/
+  position: absolute; /*The position of the cross will be absolute with respect to the parent element*/
+  top: 25%; /*The top edge of the cross will be 25% from the top edge of the parent element*/
+  left: 25%; /*The left edge of the cross will be 25% from the left edge of the parent element*/
+}
+
+.crossVertical {
+  background-color: red; /*The background color of the cross*/
+  transform: rotate(180deg); /*The cross will be rotated 135 degrees*/
+
+  width: 50%; /*The width of the cross will be half of the parent element*/
+  height: 50%; /*The height of the cross will be half of the parent element*/
+  position: absolute; /*The position of the cross will be absolute with respect to the parent element*/
+  top: 25%; /*The top edge of the cross will be 25% from the top edge of the parent element*/
+  left: 25%; /*The left edge of the cross will be 25% from the left edge of the parent element*/
+  
+}
+
+
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
