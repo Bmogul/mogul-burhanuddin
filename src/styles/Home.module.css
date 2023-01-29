@@ -325,12 +325,27 @@
 .myName button {
   margin-bottom: 15px; 
 }
+.myName2 div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
 .myName div{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.Intro div{
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
 .section{
   height: 60vh;
+  justify-content: center;
+  align-items: center;
 }
 
 
