@@ -7,7 +7,7 @@ const BMogul = () => {
         <div className={`${styles.myName} ${styles.myName2}`}>
             <h1>Burhanuddin Mogul</h1>
             <div className="Intro" style={{ display: "flex" }}>
-                <img src="/Bmogul.jpg" alt="My Image" style={{}} />
+                <img src="/Bmogul.jpg" alt="My Image" style={{"border-radius":"100%"}} />
                 <p>Computer Science Major at <a style={{color:"rgb(170, 11, 11)"}}>NJIT</a></p> 
                 {/* <div>
                     <p>Computer Science Major at <a style={{color:"rgb(170, 11, 11)"}}>NJIT</a></p>

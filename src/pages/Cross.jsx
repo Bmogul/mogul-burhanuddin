@@ -2,13 +2,13 @@ import React, {useState, useEffect} from 'react'
 import styles from 'src/styles/Home.module.css'
 
 const Cross = ({rotateDir}) => {
-    const [rotation1, setRotation1] = useState(45);
-    const [rotation2, setRotation2] = useState(180);
+    const [rotation1, setRotation1] = useState(49);
+    const [rotation2, setRotation2] = useState(188);
     const [color, setColor] = useState("red");
     useEffect(() => {
         const handleScroll = () => {
           // calculate the rotation based on the current scroll position
-          const rotation1 = (window.pageYOffset / 10) * rotateDir;
+          const rotation1 = (window.pageYOffset / 10) * rotateDir + 4;
           const rotation2 = (window.pageYOffset / 10 + 135) * rotateDir;
           setRotation1(rotation1);
           setRotation2(rotation2);
