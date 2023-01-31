@@ -21,8 +21,8 @@ const BMogul = () => {
             </div>
             <div>
                 <p>
-                Hi, my name is Burhanuddin Mogul. I'm currently studying Computer Science at 
-                <a style={{color:"rgb(170, 11, 11)"}}>NJIT</a>. I started programming around 2015 and quickly fell in love with the process
+                Hi, my name is Burhanuddin Mogul. I'm currently studying Computer Science
+                at <strong style={{color:"rgb(170, 11, 11)"}}>NJIT</strong>. I started programming around 2015 and quickly fell in love with the process
                 of development and building something out of nothing.<br/>
                 If you're in a rush I understand, click <a style={{color:"rgb(170, 11, 11)"}} href="#projects">here</a> to quickly get a look at some of the projects I have been working on<br/>
                 Otherwise, let me tell you more about me and my journey with computer science.
